@@ -1,8 +1,8 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import { db } from './db/connection.js';
 import { organizations, items, locations, tasks, users } from '../packages/db/src/schema.js';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 async function seed() {
   console.log('🌱 Seeding database...');
