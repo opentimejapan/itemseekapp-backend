@@ -1,6 +1,7 @@
 import { db } from './connection.js';
 import { organizations, users, items, locations, tasks } from '../../packages/db/src/schema.js';
 import bcrypt from 'bcryptjs';
+import { eq } from 'drizzle-orm';
 
 async function seed() {
   console.log('🌱 Seeding database...');
